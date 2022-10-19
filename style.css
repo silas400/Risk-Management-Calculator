@@ -1,0 +1,140 @@
+html{overflow-x: hidden;}
+body{height: 100vh;
+background-color: #131820;
+margin: 0;
+text-align: center;
+color: #0096FB;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 70px;}
+
+#switch{width: fit-content;
+        height: fit-content;
+        padding: 20px;
+        margin: 0;
+    border: none;}
+
+#main{
+    display: flex;
+justify-content: center;
+}
+
+/*Position Size Calculator*/
+#positionSizeCalculator{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    position: absolute;}
+
+h1{margin-bottom: 30px;}
+
+#accountSize{
+    padding: 4px 7px;
+    font-size: 20px;
+}
+
+#accountSizeDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+h2{ margin: 0;
+color: #F2FAFF;}
+
+#riskPercentageDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+}
+
+select{font-size: 20px;
+      padding: 5px 3px;}
+
+#stopLossDiv{
+    display: flex;
+    gap: 23px;
+}
+
+#stopLoss{width: 80px;
+         font-size: 20px;
+        padding: 5px 4px;}
+
+button{background-color: #0096FB;
+      color: #F2FAFF;
+      padding: 8px 16px;
+    font-size: 30px;
+    border: 2px solid #1B2D44;}
+
+button:hover{
+    color: #f5c254;
+    cursor: pointer;
+}
+
+.results{color: #f5c254;
+    font-size: 30px;
+    margin: 0;}
+
+/*Losing Streak Calculator*/
+#losingStreakCalculator{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+position: absolute;
+display: none;}
+
+#numOfTradesDiv{
+    display: flex;
+    gap: 23px;
+}
+
+#numOfTrades{
+    width: 70px;
+    font-size: 20px;
+}
+
+#winRateDiv{
+    display: flex;
+    gap: 23px;
+}
+
+#winRate {width: 70px;
+        font-size: 20px;}
+
+
+@media only screen and (max-width: 800px) {
+
+    /*Position Size Calculator Media Queries*/
+    body{margin: 0 10%;}
+
+    h1{font-size: large;
+        margin-bottom: 10px;}
+
+    h2{font-size: medium;}
+
+    button{font-size: 20px;}
+
+    #accountSize{
+        padding: 4px 7px;
+        font-size: 10px;
+    }
+
+    select{font-size: 10px;
+        padding: 5px 3px;}
+    
+    #stopLoss{width: 80px;
+        padding: 5px 4px;
+        font-size: 10px;}
+
+    .results{font-size: 15px;}
+
+    #winRate {font-size: 10px;
+            width: 40px;}
+
+    #numOfTrades{font-size: 10px;
+                width: 40px;}
+        
+}

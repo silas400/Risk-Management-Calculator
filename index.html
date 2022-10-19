@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Management Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="switch">Switch Calculators</button>
+    <div id="main">
+            <!--Position Size Calculator-->
+        <div id="positionSizeCalculator">
+            <h1>Position Size Calculator</h1>
+
+            <div id="accountSizeDiv">
+                <h2>Account Size</h2>
+                <input type="text" id="accountSize">
+            </div>
+
+            <div id="riskPercentageDiv">
+                <h2>Portion of your account size to risk</h2>
+                <select id="riskPercentage">
+                    <option value="1">1%</option>
+                    <option value="2">2%</option>
+                    <option value="3">3%</option>
+                    <option value="4">4%</option>
+                    <option value="5">5%</option>
+                </select> 
+            </div>
+
+            <div id="stopLossDiv">
+                <h2>Stop Loss Distance (%)</h2>
+                <input type="text" id="stopLoss">
+            </div>
+            <button id="calcPositionBtn">Calculate</button>
+            <p id="resultPosition" class="results"></p>
+            <p id="resultRisk" class="results"></p>
+            <p id="ratio1" class="results"></p>
+            <p id="ratio2" class="results"></p>
+        </div>
+
+        <!--Losing Streak Calculator-->
+        <div id="losingStreakCalculator">
+            <h1>Losing Streak Calculator</h1>
+        <div id="numOfTradesDiv">
+            <h2>Number of Trades</h2>
+            <input type="text" id="numOfTrades">
+        </div>
+
+        <div id="winRateDiv">
+            <h2>Win Rate (%)</h2>
+            <input type="text" id="winRate">
+        </div>
+        <button id="calcLosingStreakBtn">Calculate</button>
+        <p id="losingStreakResult" class="results"></p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
